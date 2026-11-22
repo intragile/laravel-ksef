@@ -17,7 +17,7 @@ Ez egy vékony metacsomag: nincs saját kódja, csak a [`intragile/laravel-einvo
 
 ## Amit a lengyel folyamat lefed
 
-- **Küldés:** sorba állított FA(3) küldés a KSeF 2.0-nak online, offline módban és kötegelt munkamenetben; a KSeF-szám és a hivatalos átvételi igazolás (UPO) a kimenő soron tárolódik.
+- **Küldés:** sorba állított FA(3) küldés a KSeF 2.0-nak online és offline módban; a KSeF-szám és a hivatalos átvételi igazolás (UPO) a kimenő soron tárolódik. Kötegelt munkamenet a core kliensen érhető el (`EInvoicing::ksef()->transport()->sendBatch()`), a queue-n kívül, tárolt sor és nyugta nélkül.
 - **Fogadás:** a postaláda lekérdezése a KSeF olvasási korlátain belül, a számlák bejövő dokumentumként rögzítve.
 - **Offline mód:** offline határidők, és esemény, ha egy határidő közeleg.
 - **Tanúsítványok:** KSeF Authentication és Offline tanúsítványok igénylése parancssorból; a privát kulcs 0600 móddal íródik ki, és sosem jelenik meg a kimeneten.
@@ -25,7 +25,7 @@ Ez egy vékony metacsomag: nincs saját kódja, csak a [`intragile/laravel-einvo
 
 ## Követelmények
 
-- PHP 8.3+ a `dom`, `libxml`, `mbstring` és `openssl` kiterjesztéssel (és `zip` a kötegelt munkamenetekhez)
+- PHP 8.3+ a `dom`, `libxml`, `mbstring` és `openssl` kiterjesztéssel (és `zip` a core kliens kötegelt munkameneteihez)
 - Laravel 12 vagy 13
 - Opcionális: `chillerlan/php-qrcode` ^5 a QR-kódok kirajzolásához (`composer require chillerlan/php-qrcode`)
 

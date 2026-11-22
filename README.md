@@ -17,7 +17,7 @@ This is a thin metapackage: it has no code of its own and pulls in [`intragile/l
 
 ## What the Polish flow covers
 
-- **Sending:** queued FA(3) sending to KSeF 2.0 online, in offline mode and in batch sessions, with the KSeF number and the official receipt (UPO) stored on the outbound row.
+- **Sending:** queued FA(3) sending to KSeF 2.0 online and in offline mode, with the KSeF number and the official receipt (UPO) stored on the outbound row. Batch sessions are available on the core client (`EInvoicing::ksef()->transport()->sendBatch()`), outside the queue and without a stored row or receipt.
 - **Receiving:** inbox polling within KSeF's read limits, recorded as inbound documents.
 - **Offline mode:** offline deadlines, and an event when one is about to expire.
 - **Certificates:** enrolling KSeF Authentication and Offline certificates from the command line; the private key is written with mode 0600 and never printed.
@@ -25,7 +25,7 @@ This is a thin metapackage: it has no code of its own and pulls in [`intragile/l
 
 ## Requirements
 
-- PHP 8.3+ with `dom`, `libxml`, `mbstring` and `openssl` (and `zip` for batch sessions)
+- PHP 8.3+ with `dom`, `libxml`, `mbstring` and `openssl` (and `zip` for batch sessions on the core client)
 - Laravel 12 or 13
 - Optional: `chillerlan/php-qrcode` ^5 to render the QR codes (`composer require chillerlan/php-qrcode`)
 
