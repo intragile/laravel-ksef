@@ -1,0 +1,43 @@
+{
+    "name": "intragile/laravel-ksef",
+    "description": "Polish KSeF e-invoicing for Laravel: send FA(3) invoices to KSeF 2.0 online, offline and in batches, receive them on a schedule, enrol KSeF certificates and print KOD I/KOD II QR codes, on top of intragile/laravel-einvoicing.",
+    "keywords": [
+        "laravel",
+        "ksef",
+        "krajowy-system-e-faktur",
+        "fa3",
+        "faktura-ustrukturyzowana",
+        "e-invoicing",
+        "poland",
+        "polska",
+        "kod-qr",
+        "offline24",
+        "ministerstwo-finansow",
+        "nip"
+    ],
+    "type": "metapackage",
+    "license": "MIT",
+    "homepage": "https://intragile.eu",
+    "support": {
+        "issues": "https://github.com/intragile/laravel-ksef/issues",
+        "source": "https://github.com/intragile/laravel-ksef"
+    },
+    "authors": [
+        {
+            "name": "IntrAgile Kft.",
+            "email": "info@intragile.eu",
+            "homepage": "https://intragile.eu"
+        }
+    ],
+    "require": {
+        "intragile/laravel-einvoicing": "^1.2",
+        "intragile/php-einvoicing": "^1.2",
+        "php": "^8.3"
+    },
+    "suggest": {
+        "chillerlan/php-qrcode": "Renders the KSeF verification links (KOD I and KOD II) as SVG or PNG QR codes (^5; PNG needs ext-gd)",
+        "ext-zip": "Needed for KSeF batch sessions and invoice export packages (ZIP archives)"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
