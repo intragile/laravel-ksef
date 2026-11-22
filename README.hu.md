@@ -37,6 +37,7 @@ A kiadás után:
 composer require intragile/laravel-ksef
 php artisan vendor:publish --tag=einvoicing-config   # config/einvoicing.php
 php artisan migrate                                  # kimenő, bejövő és KSeF-kurzor táblák
+php artisan einvoicing:install-rules                 # a Peppol szabályok, amelyeket a doctor ellenőriz
 php artisan einvoicing:doctor
 ```
 
@@ -44,7 +45,7 @@ Környezeti kulcsok (az `einvoicing.ksef` beállítást töltik ki):
 
 ```dotenv
 KSEF_ENVIRONMENT=test                   # test (TE), demo vagy production
-KSEF_NIP=5265877635                     # a környezet, amelyre a kliens hitelesít
+KSEF_NIP=5265877635                     # a kontextus, amelyre a kliens hitelesít
 KSEF_CERTIFICATE_PATH=/run/secrets/ksef-seal.crt.pem
 KSEF_PRIVATE_KEY_PATH=/run/secrets/ksef-seal.key.pem
 # KSEF_PRIVATE_KEY_PASSPHRASE=...       # titkosított kulcshoz

@@ -37,6 +37,7 @@ Once released:
 composer require intragile/laravel-ksef
 php artisan vendor:publish --tag=einvoicing-config   # config/einvoicing.php
 php artisan migrate                                  # outbound, inbound and KSeF cursor tables
+php artisan einvoicing:install-rules                 # the Peppol rules the doctor checks
 php artisan einvoicing:doctor
 ```
 
