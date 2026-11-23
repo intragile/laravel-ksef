@@ -9,7 +9,7 @@ Fejlesztő és karbantartó: [IntrAgile Kft.](https://intragile.eu)
 
 A lengyel **KSeF** (*Krajowy System e-Faktur*) e-számlázás Laravelhez: FA(3) számlák küldése a KSeF 2.0-nak online, offline és kötegelve, fogadásuk ütemezetten, KSeF-tanúsítványok igénylése, KOD I és KOD II QR-kódok nyomtatása.
 
-> **Még nincs kiadva.** A csomaghoz az `intragile/laravel-einvoicing` 1.2 kell, amely még nem jelent meg. Addig a `composer require intragile/laravel-ksef` nem oldható fel.
+> **Állapot:** 1.0.0-s verzió, kiadva 2026-11-23-án, az `intragile/laravel-einvoicing` 1.2-re építve. A KSeF élőben a KSeF TE-n (API 2.10 RC) ellenőrzött; a DEMO és a PRODUCTION nincs ellenőrizve.
 
 Ez egy vékony metacsomag: nincs saját kódja, csak a [`intragile/laravel-einvoicing`](https://github.com/intragile/laravel-einvoicing) csomagot és az [`intragile/php-einvoicing`](https://github.com/intragile/php-einvoicing) motort húzza be, hogy a lengyel használati eset név szerint megtalálható legyen. A teljes funkcionalitás a [laravel-einvoicing README](https://github.com/intragile/laravel-einvoicing#polish-ksef) **Polish KSeF** szakaszában van dokumentálva.
 

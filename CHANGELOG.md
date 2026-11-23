@@ -8,9 +8,11 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-11-23
+
 ### Added
 
-- A metapackage that requires `intragile/laravel-einvoicing` (`^1.2`) and `intragile/php-einvoicing` (`^1.2`), so that the Polish KSeF use case is found by its name. It ships no code. It is not released yet: it needs `intragile/laravel-einvoicing` 1.2.
+- A metapackage that requires `intragile/laravel-einvoicing` (`^1.2`) and `intragile/php-einvoicing` (`^1.2`), so that the Polish KSeF use case is found by its name. It ships no code.
 
 ---
 

@@ -9,7 +9,7 @@ Developed and maintained by [IntrAgile Kft.](https://intragile.eu)
 
 Polish **KSeF** (*Krajowy System e-Faktur*) e-invoicing for Laravel: send FA(3) invoices to KSeF 2.0 online, offline and in batches, receive them on a schedule, enrol KSeF certificates and print KOD I and KOD II QR codes.
 
-> **Not yet released.** This package needs `intragile/laravel-einvoicing` 1.2, which is not released yet. Until then `composer require intragile/laravel-ksef` cannot be resolved.
+> **Status:** version 1.0.0, released 2026-11-23, on top of `intragile/laravel-einvoicing` 1.2. KSeF is live-verified on KSeF TE (API 2.10 RC); DEMO and PRODUCTION are not verified.
 
 This is a thin metapackage: it has no code of its own and pulls in [`intragile/laravel-einvoicing`](https://github.com/intragile/laravel-einvoicing) and the engine [`intragile/php-einvoicing`](https://github.com/intragile/php-einvoicing), so that you can find the Polish use case by its name. The full functionality is documented in the **Polish KSeF** section of the [laravel-einvoicing README](https://github.com/intragile/laravel-einvoicing#polish-ksef).
 
